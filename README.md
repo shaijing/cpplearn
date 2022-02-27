@@ -1,2 +1,2 @@
 # cpplearn
-# Power by Jetbrains with free license
+# Power by Jetbrains with student license
