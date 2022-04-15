@@ -85,4 +85,21 @@ template <> void Swap<job>(job &j1, job &j2);
 void Show(job &j);
 
 void twoswap();
+
+
+template <typename T>            // template A
+void ShowArray(T arr[], int n);
+
+template <typename T>            // template B
+void ShowArray(T * arr[], int n);
+
+struct debts
+{
+    char name[50];
+    double amount;
+};
+
+void tempover();
+
+void choices();
 #endif //CPPLEARN_LEARN_CHAPTER_8_H

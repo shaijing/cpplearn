@@ -3,7 +3,7 @@
 
 
 int main() {
-    twoswap();
+
     system("pause");
     return 0;
 }
