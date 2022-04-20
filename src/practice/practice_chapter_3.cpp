@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/3/4.
 //
-#include "../../headers/practice/practice_chapter_3.h"
+#include "practice/practice_chapter_3.h"
 
 void get_hight() {
     float high;

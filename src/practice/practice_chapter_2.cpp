@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/3/4.
 //
-#include "../../headers/practice/practice_chapter_2.h"
+#include "practice/practice_chapter_2.h"
 void show_info(){
     char name[10];
     char address[20];

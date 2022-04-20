@@ -1,5 +1,28 @@
 cmake_minimum_required(VERSION 3.21)
 project(cpplearn)
 
+
+
+# ##############################################################################
+# Normal Configure
+# ##############################################################################
+
 set(CMAKE_CXX_STANDARD 11)
-add_executable(cpplearn main.cpp headers/learn/learn_chapter_2.h source/learn/learn_chapter_2.cpp headers/learn/learn_chapter_3.h source/learn/learn_chapter_3.cpp headers/practice/practice_chapter_2.h source/practice/practice_chapter_2.cpp source/practice/practice_chapter_3.cpp headers/practice/practice_chapter_3.h source/learn/learn_chapter_10.cpp headers/learn/learn_chapter_10.h source/learn/learn_chapter_8.cpp headers/learn/learn_chapter_8.h source/learn/learn_chapter_16.cpp headers/learn/learn_chapter_16.h headers/learn/learn_chapter_11.h source/learn/learn_chapter_11.cpp)
+set(MAIN_PROJECIT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+# set(CMAKE_BUILD_TYPE Debug CACHE STRING "set build type to debug")
+# set(CMAKE_BUILD_TYPE "Debug”)
+set(CMAKE_VERBOSE_MAKEFILEON ON)
+
+# ##############################################################################
+# Build
+# ##############################################################################
+
+# Add header file include directories
+include_directories(./include)
+
+file(GLOB_RECURSE SRC_SUB ${PROJECT_SOURCE_DIR}/src/learn/*.cpp ${PROJECT_SOURCE_DIR}/src/practice/*.cpp)
+set(ALL_SRC ${SRC_TOP} ${SRC_SUB})
+message("ALL_SRC: ${ALL_SRC}")
+add_executable(cpplearn main.cpp main.h ${ALL_SRC})

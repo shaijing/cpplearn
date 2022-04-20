@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/3/10.
 //
 #include <iostream>
-#include "../../headers/learn/learn_chapter_10.h"
+#include "learn/learn_chapter_10.h"
 
 void Stock00::acquire(const std::string &co, long n, double pr) {
     company = co;

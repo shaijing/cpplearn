@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/2/27.
 //
-#include "../../headers/learn/learn_chapter_3.h"
+#include "learn/learn_chapter_3.h"
 
 int i_1 = 1;//traditional C initialization,
 int i_2(2);//alternative C++ syntax
