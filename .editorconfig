@@ -1,0 +1,22 @@
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+# All files
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8 # 设置文件字符集为 utf-8
+trim_trailing_whitespace = true # 去除行首的任意空白字符
+insert_final_newline = false # 始终在文件末尾插入一个新行
+
+[*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
+indent_style = space
+indent_size = 4
+
+# [*.py]
+# indent_style = space
+# indent_size = 4
+
+[Makefile]
+indent_style = tab

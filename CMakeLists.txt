@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
 project(cpplearn)
 
-
-
 # ##############################################################################
 # Normal Configure
 # ##############################################################################
@@ -20,9 +18,9 @@ set(CMAKE_VERBOSE_MAKEFILEON ON)
 # ##############################################################################
 
 # Add header file include directories
-include_directories(./include)
+include_directories(include)
 
-file(GLOB_RECURSE SRC_SUB ${PROJECT_SOURCE_DIR}/src/learn/*.cpp ${PROJECT_SOURCE_DIR}/src/practice/*.cpp)
-set(ALL_SRC ${SRC_TOP} ${SRC_SUB})
+file(GLOB_RECURSE SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
+set(ALL_SRC  ${SRC})
 message("ALL_SRC: ${ALL_SRC}")
-add_executable(cpplearn main.cpp main.h ${ALL_SRC})
+add_executable(cpplearn  ${ALL_SRC})
